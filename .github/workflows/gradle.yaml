@@ -40,3 +40,14 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew pullAllPluginsSource check
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
+    - run: npm install
+    - run: npm install -g selenium-side-runner
+    - run: npm install -g google-chrome
+    - run: npm install -g chromedriver
+    - run: selenium-side-runner /*.side
+      
+      
