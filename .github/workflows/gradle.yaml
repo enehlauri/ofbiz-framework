@@ -46,7 +46,7 @@ jobs:
         node-version: 14
     - run: npm install
     - run: npm install -g selenium-side-runner
-    - run: npm install -g google-chrome
+    - run: npm install puppeteer
     - run: npm install -g chromedriver
     - run: selenium-side-runner /*.side
       
