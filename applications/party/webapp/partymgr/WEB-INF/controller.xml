@@ -602,6 +602,12 @@ under the License.
         <response name="success" type="view" value="viewroles"/>
         <response name="error" type="view" value="viewroles"/>
     </request-map>
+    <request-map uri="deleteallroles">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="deleteAllPartyRoles"/>
+        <response name="success" type="view" value="viewroles"/>
+        <response name="error" type="view" value="viewroles"/>
+    </request-map>
     <request-map uri="createroletype">
         <security https="true" auth="true"/>
         <event type="service" invoke="createRoleType"/>
@@ -721,8 +727,8 @@ under the License.
     <request-map uri="removeAttachFile">
         <security https="true" auth="true"/>
         <event type="service" invoke="expireCommEventContentAssoc"/>
-        <response name="success" type="request" value="EditCommunicationEvent"/>
-        <response name="error" type="view" value="EditCommunicationEvent"/>
+        <response name="success" type="request" value="ViewCommunicationEvent"/>
+        <response name="error" type="view" value="ViewCommunicationEvent"/>
     </request-map>
     <request-map uri="AddCommContent">
         <security https="true" auth="true"/>
