@@ -1,0 +1,249 @@
+{
+  "id": "829858ec-595f-45f1-adde-7e7b9ad0eddb",
+  "version": "2.0",
+  "name": "Delete_test",
+  "url": "https://localhost:8443",
+  "tests": [{
+    "id": "889436ac-5585-4994-b4d3-069ffd3b9d52",
+    "name": "Test_deleteall_funcition",
+    "commands": [{
+      "id": "6e1197ca-e060-47e6-bcaf-bce3704fdcd8",
+      "comment": "",
+      "command": "open",
+      "target": "/partymgr/control/main",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e893efeb-1472-49d6-948b-32f1cb603649",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7b70593-3976-434a-84b9-45a9c2ef6042",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Party Group",
+      "targets": [
+        ["linkText=Create New Party Group", "linkText"],
+        ["css=ul:nth-child(1) > li li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Party Group')]", "xpath:link"],
+        ["xpath=//div[@id='FindPartyPanel']/div/ul/div/ul/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/partymgr/control/editpartygroup?create_new=Y')]", "xpath:href"],
+        ["xpath=//ul/div/ul/li/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Party Group')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a365711-685a-446c-b495-f427b1e6fdc1",
+      "comment": "",
+      "command": "type",
+      "target": "id=EditPartyGroup_groupName",
+      "targets": [
+        ["id=EditPartyGroup_groupName", "id"],
+        ["name=groupName", "name"],
+        ["css=#EditPartyGroup_groupName", "css:finder"],
+        ["xpath=//input[@id='EditPartyGroup_groupName']", "xpath:attributes"],
+        ["xpath=//form[@id='EditPartyGroup']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "SEM"
+    }, {
+      "id": "0c9e6159-aff5-4471-a036-1dcc8698f3f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=EditPartyGroup_submitButton",
+      "targets": [
+        ["id=EditPartyGroup_submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#EditPartyGroup_submitButton", "css:finder"],
+        ["xpath=//input[@id='EditPartyGroup_submitButton']", "xpath:attributes"],
+        ["xpath=//form[@id='EditPartyGroup']/table/tbody/tr[13]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c50861b0-febf-445a-9ead-35e6625895ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Role(s)",
+      "targets": [
+        ["linkText=Role(s)", "linkText"],
+        ["css=.tab-bar li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Role(s)')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/partymgr/control/viewroles?partyId=10001')]", "xpath:href"],
+        ["xpath=//div[5]/div/ul/li/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Role(s)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "442e7a10-6d73-4792-a6e6-6ec7e83db2ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=AddPartyMainRole_add",
+      "targets": [
+        ["id=AddPartyMainRole_add", "id"],
+        ["name=add", "name"],
+        ["css=#AddPartyMainRole_add", "css:finder"],
+        ["xpath=//input[@id='AddPartyMainRole_add']", "xpath:attributes"],
+        ["xpath=//form[@id='AddPartyMainRole']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40722e1b-09fb-4781-af47-c11af9de373d",
+      "comment": "",
+      "command": "click",
+      "target": "id=AddPartyMainRole_roleTypeId",
+      "targets": [
+        ["id=AddPartyMainRole_roleTypeId", "id"],
+        ["css=#AddPartyMainRole_roleTypeId", "css:finder"],
+        ["xpath=//select[@id='AddPartyMainRole_roleTypeId']", "xpath:attributes"],
+        ["xpath=//form[@id='AddPartyMainRole']/table/tbody/tr/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fae028ec-b966-47b0-8b08-30c1c7463cab",
+      "comment": "",
+      "command": "select",
+      "target": "id=AddPartyMainRole_roleTypeId",
+      "targets": [],
+      "value": "label=Accountant"
+    }, {
+      "id": "5d70df65-1322-423e-adac-9e2fd41b1aa8",
+      "comment": "",
+      "command": "click",
+      "target": "id=AddPartyMainRole_roleTypeId",
+      "targets": [
+        ["id=AddPartyMainRole_roleTypeId", "id"],
+        ["css=#AddPartyMainRole_roleTypeId", "css:finder"],
+        ["xpath=//select[@id='AddPartyMainRole_roleTypeId']", "xpath:attributes"],
+        ["xpath=//form[@id='AddPartyMainRole']/table/tbody/tr/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70bdad96-3525-4b8d-bedc-416cc5de663b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Product Store Roles",
+      "targets": [
+        ["linkText=Product Store Roles", "linkText"],
+        ["css=li:nth-child(20) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Product Store Roles')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/partymgr/control/ViewProductStoreRoles?partyId=10001')]", "xpath:href"],
+        ["xpath=//li[20]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Product Store Roles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df960c31-f4ca-4577-9241-7d78113768d0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Product Store Roles",
+      "targets": [
+        ["linkText=Product Store Roles", "linkText"],
+        ["css=li:nth-child(20) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Product Store Roles')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/partymgr/control/ViewProductStoreRoles?partyId=10001')]", "xpath:href"],
+        ["xpath=//li[20]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Product Store Roles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbc98a20-93a1-4970-a25d-2f6009bc9b52",
+      "comment": "",
+      "command": "click",
+      "target": "id=AddPartyMainRole_add",
+      "targets": [
+        ["id=AddPartyMainRole_add", "id"],
+        ["name=add", "name"],
+        ["css=#AddPartyMainRole_add", "css:finder"],
+        ["xpath=//input[@id='AddPartyMainRole_add']", "xpath:attributes"],
+        ["xpath=//form[@id='AddPartyMainRole']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e985da8d-44c7-4f0f-832e-ef12340eb47d",
+      "comment": "",
+      "command": "click",
+      "target": "id=AddPartyMainRole_roleTypeId",
+      "targets": [
+        ["id=AddPartyMainRole_roleTypeId", "id"],
+        ["css=#AddPartyMainRole_roleTypeId", "css:finder"],
+        ["xpath=//select[@id='AddPartyMainRole_roleTypeId']", "xpath:attributes"],
+        ["xpath=//form[@id='AddPartyMainRole']/table/tbody/tr/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8da02214-a2ea-4443-a212-a4e2f1d4c25c",
+      "comment": "",
+      "command": "select",
+      "target": "id=AddPartyMainRole_roleTypeId",
+      "targets": [],
+      "value": "label=Administrator"
+    }, {
+      "id": "abac8557-0bbd-4523-9285-aeddd7bfc865",
+      "comment": "",
+      "command": "click",
+      "target": "id=AddPartyMainRole_roleTypeId",
+      "targets": [
+        ["id=AddPartyMainRole_roleTypeId", "id"],
+        ["css=#AddPartyMainRole_roleTypeId", "css:finder"],
+        ["xpath=//select[@id='AddPartyMainRole_roleTypeId']", "xpath:attributes"],
+        ["xpath=//form[@id='AddPartyMainRole']/table/tbody/tr/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44bc14a0-7833-4ea6-ac8e-d9f68f4ab7fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=AddPartyMainRole_add",
+      "targets": [
+        ["id=AddPartyMainRole_add", "id"],
+        ["name=add", "name"],
+        ["css=#AddPartyMainRole_add", "css:finder"],
+        ["xpath=//input[@id='AddPartyMainRole_add']", "xpath:attributes"],
+        ["xpath=//form[@id='AddPartyMainRole']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc788869-b0a6-4128-8c39-6152eae08a66",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove all roles",
+      "targets": [
+        ["linkText=Remove all roles", "linkText"],
+        ["css=.button-bar > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove all roles')]", "xpath:link"],
+        ["xpath=//div[@id='content-main-section']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:document.viewroles_LF_1.submit()')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove all roles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2c7da77-541e-4227-ac86-e90bfcea07da",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h3[contains(.,'No Records Found')]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "25208970-a433-4b8d-9014-bd04c7d0cf23",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["889436ac-5585-4994-b4d3-069ffd3b9d52"]
+  }],
+  "urls": ["https://localhost:8443/"],
+  "plugins": []
